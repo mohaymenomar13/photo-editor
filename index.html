@@ -1,0 +1,47 @@
+<!DOCTYPE>
+
+<html>
+    <head>
+        <link href="photo.css" rel="stylesheet">
+        <link href="animation.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="mother">
+        <div class="imageAreaP">
+            <div class="imageAreaP1">
+            <img style="transform: scale(50);"  class="imgP" id="ImgP" src="img/pic1.jpg">
+            </div>
+        </div>
+        <div class="title">
+            <h1>Photo Editor</h1>
+        </div>
+        <div class="toolsP">
+            <label>
+            <button class="itemsP addressP" id="upLoadFile">Change Photo</button>
+            <input type="file" id="upLoadedFile" hidden>
+            <span id="photoN">Wapipteaskjdhklajsdh.png</span>
+            </label>
+            <button class="itemsP scaleP" onclick="changeScaleP()">Scale</button>
+            <button class="itemsP rotateP" onclick="changeRotateP()">Rotate</button>
+            <button class="itemsP blurP" onclick="changeBlurP()">Blur</button>
+            <button class="itemsP grayP" onclick="changeGrayP()">Gray</button>
+            <button class="itemsP saturate" onclick="changeSaturateP()">Saturation</button>
+            <button class="itemsP brightness" onclick="changeBrightnessP()">Brightness</button>
+            <button class="itemsP contrast" onclick="changeContrastP()">Contrast</button><br>
+            <button class="itemsP sepia" onclick="changeSepiaP()">Sepia</button>
+            <button class="itemsP hue" onclick="changeHueP()">Hue</button>
+            <button class="itemsP reset" onclick="resetP()">Reset</button>
+        </div>
+        <div class="range">
+            <label class="resultP" for="rangeLP">
+                <p style="display: none" name="rangeLP" id="resuP" class="resultP resuP dialague">0</p><br>
+                <p class="dialague x" style="display: none;">X</p>
+            <input style="display: none" oninput="chScaleP()" name="rangeLP" class="rangeP dialague" value="" type="range">
+            </label>
+        </div>
+    </div>
+    
+        <script src="photo.js">
+        </script>
+    </body>
+</html>
